@@ -3305,3 +3305,20 @@ class GravityZeroCoin(ScryptMixin, Coin):
     RPC_PORT = 36442
     ESTIMATE_FEE = 0.01
     RELAY_FEE = 0.01
+    
+class Audax(Coin):
+    NAME = "Audax"
+    SHORTNAME = "AUDAX"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0221312B")
+    XPRV_VERBYTES = bytes.fromhex("022D2533")
+    GENESIS_HASH = ('00000f62ca37e03539929b0fe54c61b4'
+                    '6bb831b99e97df99194aae2fba346f45')
+    P2PKH_VERBYTE = bytes.fromhex("17")
+    P2SH_VERBYTES = [bytes.fromhex("08")]
+    WIF_BYTE = bytes.fromhex("8e")
+    TX_COUNT_HEIGHT = 136970
+    TX_COUNT = 275438
+    TX_PER_BLOCK = 2
+    RPC_PORT = 18201
+    PEERS = []
